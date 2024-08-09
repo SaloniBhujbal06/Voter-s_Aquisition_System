@@ -1,0 +1,162 @@
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+	height:100%;
+}
+.video-container .title-container {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.video-container .description .inner {
+    font-size: 1em;
+    width: 45%;
+    margin: 0 auto;
+}
+.video-container .link {
+    position: absolute;
+    bottom: 3em;
+    width: 100%;
+    text-align: center;
+    z-index: 1001;
+    font-size: 2em;
+    color: #fff;
+}
+.video-container .link a {
+    color: #fff;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+	
+	
+}
+.video-container video.fillWidth {
+    width: 100%;
+	top:0px
+	
+}
+
+.introText{
+    color: white !important;
+	
+	
+}
+.introText span{
+	font-family: 'bacardi';
+	font-size:42px;
+	
+	}
+	
+	.introText sub{
+		font-size:30px;
+	font-family: 'bacardi-thin';
+	}
+.introText sub:after{
+	content:"";
+	height:4px;
+	width:60px;
+	background:white;
+	position:absolute;
+	margin-top:25px;
+	margin-left:-50px
+	}
+	
+.bottomLine{
+	font-style:italic;
+	font-family:"bacardi-thin-some";
+	font-size:20px;
+	}
+.headline:after{
+	content:"";
+	background:url(../img/lines.png);
+	width:300px;
+	height:30px;
+	position:absolute;
+	margin-top:-10px;
+	margin-left:-150px;
+	}
+.text-thin{
+    font-weight: 100;
+}
+
+.video-layout {
+    border-radius: 4px;
+    box-shadow: 0 0 10px #ccc;
+
+}
+
+.today-video{
+    width: 500px !important;
+    height: 281px !important;
+}
+
+.grid-item{
+    margin-bottom: 30px;
+}
+
+.grid-img{
+    background-size:cover !important;
+    overflow:hidden;
+    width: 360px;
+    height: 202px;
+}
+
+.overlay{
+    background:rgba(0,0,0,.75);
+    text-align:center;
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    display: table;
+    cursor: pointer;
+}
+
+.overlay .play-button{
+    display: table-cell;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 80px;
+
+}
+
+.grid-img:hover .overlay{
+    opacity:1;
+}
